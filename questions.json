@@ -1,0 +1,35 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "What super power would you pick?",
+            "type": "radio",
+            "options": ["Superstrength", "Flying", "Control time", "Telekinesis"]
+        },
+        {
+            "id": 2,
+            "question": "Which of the following programming languages do you know?",
+            "type": "checkbox",
+            "options": ["JavaScript", "Python", "Java", "C++"]
+        },
+        {
+            "id": 4,
+            "question": "What pet you prefer?",
+            "type": "radio",
+            "options": ["Cats", "Dogs", "Birbs", "Reptiles", "Other"]
+            
+        },
+        {
+            "id": 3,
+            "question": "What's your favorite pizza?",
+            "type": "text",
+            "required": true
+        },
+        {
+            "id": 5,
+            "question": "What's is your dream destination?",
+            "type": "text",
+            "required": true
+        }
+    ]
+}

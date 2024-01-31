@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    font-family: 'Garamond', serif;
+    background-image: url(mantekilla/mantekillapics/wallpaper2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(231,236,239,255);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hometxt {
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    background: url('mantekilla/mantekillapics/logo.png') no-repeat;
+    width: 50px;
+    height: 50px; 
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.home-link {
+    text-decoration: none;
+    color: black;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.search-box-container {
+    display: none;
+    margin-right: 20px; 
+    margin-left: 10px;
+}
+
+.cart-container {
+    display: none;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.box {
+    position: relative;
+}
+
+.icon-buttons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+}
+
+.search-icon-button,
+.cart-icon-button {
+    font-size: 24px;
+    margin-left: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Garamond', serif;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 0; /* Adjust this value to position it on the left side */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
+main {  
+    position: relative;
+
+}
+
+main h1 {
+    margin-left: 210px;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-left: 150px;
+}
+
+.product-card {
+    /* Add a margin to create space between the cards */
+    margin: 5px;
+    /* Set a width for each card to fit four cards in a row */
+    width: 400px;
+    /* Adjust the box-sizing property for accurate width calculation */
+    box-sizing: border-box;
+    /* Add any other styles you need for the product card */
+}
+
+.product-card img {
+    /* Set a maximum width for the images */
+    max-width: 300px    ;
+    /* Set a maximum height if needed */
+    max-height: 300px; /* Adjust the value as per your preference */
+    /* Add any other styles you need for the images */
+}
+
+.slideshow-container {
+    max-width: 100%; /* Ensure the slideshow container doesn't exceed the viewport width */
+    overflow: hidden; /* Hide any overflow content beyond the container */
+}
+
+
+.slideshow-image {
+    width: 100%; /* Make the images fill the container width */
+    height: auto; /* Maintain the aspect ratio of the images */
+    display: block; /* Remove default inline styling */
+}
+
+.lookbook-page {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* Adjust the main-content only for the lookbook-page */
+.lookbook-page .main-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.lookbook-main {
+    margin: 5px auto; /* Adjust the margin and set auto to center horizontally */
+    max-width: 1200px; /* Set the maximum width if necessary */
+    box-sizing: border-box;
+}
+
+.lookbook-main img {
+    max-width: 100%; /* Set the maximum width to the container width */
+    height: auto;    /* Maintain the aspect ratio */
+    display: block;  /* Remove default inline styling */
+    margin: auto;    /* Center the image horizontally within the container */
+    margin-top: 50px;
+}
+
+.lookbook-card {
+    margin: 5px;
+    width: 300px;
+    box-sizing: border-box;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-left: 70px;
+    flex: 1;
+}
+
+.lookbook-card img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+}
+
+.h3 {
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+}
+
+footer {
+    background-color: white;
+    padding: 5px;
+    text-align: left;
+}
