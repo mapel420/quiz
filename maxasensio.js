@@ -57,12 +57,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
         
-            if (!hasErrors) {
-                // Hide the form and show success message
-                document.getElementById('quizForm').style.display = 'none';
-                document.getElementById('successMessage').style.display = 'block'; // Show success message
-            }
+            if (hasErrors) {
+            // Display error message for required questions
+            document.getElementById('requiredQuestionsError').textContent = 'Please answer all required questions';
+        } else {
+            // Hide the error message for required questions
+            document.getElementById('requiredQuestionsError').textContent = '';
+
+            // Hide the form and show success message
+            document.getElementById('quizForm').style.display = 'none';
+            successMessage.style.display = 'block'; // Show success message
         }
+    }
         
         
 
