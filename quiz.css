@@ -3,9 +3,10 @@ body {
     background-color: #f4f4f4;
     color: #333;
     padding: 20px;
-    background-image: url(mantekilla/wallpaper2.jpg);
+    background-image: url(mantekilla/mantekillapics/wallpaper2.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .container {
@@ -75,7 +76,8 @@ form input[type="email"] {
 }
 
 .error {
-    color: #ff0000;
+    color: red; /* Set the color of the error message */
+    
 }
 
 button[type="submit"] {
