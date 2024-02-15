@@ -8,38 +8,31 @@
 </head>
 <body>
 	<h1>Max's Quiz</h1>
-	<form id="quizForm" name="quizForm">
+	<form id="quizForm" name="quizForm" novalidate="">
 		<fieldset>
 			<legend>Your Information!</legend>
 			<div class="input-wrapper">
-				<label for="firstName">First Name:</label> 
-				<input id="firstName" name="firstName" pattern="[A-Za-z]+" required="" type="text"> 
-				<span class="error" id="firstNameError"></span> 
-				<span class="required-star">*</span>
+				<label for="firstName">First Name:</label> <input id="firstName" name="firstName" pattern="[A-Za-z]+" required="" type="text"> <span class="error" id="firstNameError"></span> <span class="required-star">*</span>
 			</div>
 			<div class="input-wrapper">
-				<label for="lastName">Last Name:</label> 
-				<input id="lastName" name="lastName" pattern="[A-Za-z]+" required="" type="text"> 
-				<span class="error" id="lastNameError"></span> 
-				<span class="required-star">*</span>
+				<label for="lastName">Last Name:</label> <input id="lastName" name="lastName" pattern="[A-Za-z]+" required="" type="text"> <span class="error" id="lastNameError"></span> <span class="required-star">*</span>
 			</div>
 			<div class="input-wrapper">
-				<label for="email">Email:</label> 
-				<input id="email" name="email" required="" type="email"> 
-				<span class="error" id="emailError"></span> 
-				<span class="required-star">*</span>
+				<label for="email">Email:</label> <input id="email" name="email" required="" type="email"> <span class="error" id="emailError"></span> <span class="required-star">*</span>
 			</div>
 		</fieldset>
-        <div id="quizContainer"></div><button type="submit">Submit</button>
+		<div id="quizContainer"></div><button type="submit">Submit</button>
 	</form>
-	
-    <div id="successMessage" style="display: none;">
+	<div class="error" id="1Error"></div>
+	<div class="error" id="2Error"></div>
+	<div class="error" id="3Error"></div>
+	<div class="error" id="4Error"></div>
+	<div class="error" id="5Error"></div>
+	<div id="requiredQuestionsError" style="color: red;"></div>
+	<div id="successMessage" style="display: none;">
 		thx! this info wont be sold. promise.
 	</div>
-	
-    <div id="requiredQuestionsError" style="color: red;"></div> <!--This <div> element will display error messages for required questions if they are left empty when the form is submitted-->
-	
-    <script src="maxasensio.js">
+	<script src="maxasensio.js">
 	</script>
 </body>
 </html>
